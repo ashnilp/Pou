@@ -1,21 +1,13 @@
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
 }
 body {
   height: 100vh;
   margin: 0;
-  font: 1.6rem Helvetica;
-
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+button {
+  font-size: 1.6rem;
 }
 #root {
-  width: 100%;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  height: 100%;
 }

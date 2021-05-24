@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 15px;
+}
+.header__logoImg {
+    object-fit: contain;
+    flex: 1;
+    width: 90px;
+    margin-right: 100px;
+}
+.header__links {
+    display: flex;
+    gap: 15px;
+}
+.header__links > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
