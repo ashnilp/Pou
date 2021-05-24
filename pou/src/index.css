@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  margin: 0;
+}
+button {
+  font-size: 1.6rem;
+}
+#root {
+  height: 100%;
+}
