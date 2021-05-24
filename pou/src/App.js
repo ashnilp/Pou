@@ -1,11 +1,18 @@
+import React, {useState} from 'react'
 import './App.css';
-import Home from './Home/Home'
+import Navbar from './components/Navbar/Navbar';
+import {BrowserRouter, Switch, Route } from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+      <Switch>
+        <Route path='/' exact component={Home}/>
+        <Route path='/aboutUs' exact component={AboutUs}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
