@@ -3,6 +3,7 @@ import { Button  } from './Button';
 import { Link } from 'react-router-dom'
 import './Navbar.css';
 import Dropdown from './Dropdown';
+import Logo from '../../Images/pou-logo.png'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -35,8 +36,8 @@ function Navbar() {
     return (
         <>
           <nav className="navbar">
-            <Link to="/" className="navbar-logo">
-                POU LTD
+            <Link to="/" className="navbar-logo-img">
+                <img src={Logo} width="100px" alt=""/><i className="fab fa-firstdraft"/>
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
@@ -47,23 +48,28 @@ function Navbar() {
                     Home
                 </Link>
               </li>
+              <li className="nav-item"> 
+                <Link to='/about-us' className="nav-links" onClick={closeMobileMenu}>
+                    About Us
+                </Link>
+              </li>
               <li className="nav-item"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               > 
-                <Link to='/Services' className="nav-links" onClick={closeMobileMenu}>
+                <Link to='/services' className="nav-links" onClick={closeMobileMenu}>
                     Services <i className='fas fa-caret-down'/>
                 </Link>
                 {dropdown && <Dropdown/>}
               </li>
               <li className="nav-item"> 
-                <Link to='/contact-us' className="nav-links" onClick={closeMobileMenu}>
-                    Contact Us
+                <Link to='/gallery' className="nav-links" onClick={closeMobileMenu}>
+                    Gallery
                 </Link>
               </li>
               <li className="nav-item"> 
-                <Link to='/' className="nav-links" onClick={closeMobileMenu}>
-                    Sign Up
+                <Link to='/contact-us' className="nav-links" onClick={closeMobileMenu}>
+                    Contact Us
                 </Link>
               </li>
             </ul>

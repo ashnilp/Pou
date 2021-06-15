@@ -1,11 +1,14 @@
-import '../index.css'
-import POU from '../Images/pou.jpg'
+import React from 'react';
+import './Home.css';
+
 
 function Home() {
    return (
-      <div>
-         
-      </div>
+      <>
+         <div className="home-container">
+            
+         </div>
+      </>
    )
 }
 export default Home;
