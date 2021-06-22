@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5rem;
+    height: 100%;
+}
+.main  {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+/*).footer {
+    grid-area: footer;
+    display: flex;
+    color: #fff;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}  */
