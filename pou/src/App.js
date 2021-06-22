@@ -32,9 +32,10 @@ function App(props) {
             <Route path='/' component={Home}/>
           </Switch>
         </main>
-        
+        <footer>
+          <Footer />
+        </footer>
       </div>
-       
     </BrowserRouter>
   );
 }
